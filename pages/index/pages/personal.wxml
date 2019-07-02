@@ -1,0 +1,9 @@
+<!--pages/index/pages/personal.wxml-->
+<view class="personal">
+    <view class="background">
+    
+    </view>
+    <view>
+
+    </view>
+</view>

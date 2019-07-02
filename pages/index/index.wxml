@@ -1,0 +1,8 @@
+<!--index.wxml-->
+<view class="container">
+  <button class='btn1' bindtap="doLogin">
+      <image class='btnImg' src='../images/wechat.png'></image>
+      <view>点击进入（BateV1.0）</view>
+  </button>
+</view>
+
