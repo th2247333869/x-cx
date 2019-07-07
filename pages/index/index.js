@@ -1,6 +1,8 @@
 //index.js
 //获取应用实例
 var utils = require('../../utils/util.js')
+var network = require('../../utils/network.js')
+
 
 const app = getApp()
 Page({
@@ -59,7 +61,7 @@ Page({
       success(res) {
         if (res.code) {
           //发起网络请求
-          wx.request({
+          network.request({
             url: utils.getUrl() +'wxlogin',
             data: {
               code: res.code,//获取openid的话 需要向后台传递code,利用code请求api获取openid

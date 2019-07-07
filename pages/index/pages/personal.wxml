@@ -1,9 +1,25 @@
 <!--pages/index/pages/personal.wxml-->
 <view class="personal">
     <view class="background">
-    
+      <image src="../../images/p1.jpeg"></image>
     </view>
-    <view>
-
+    <view class="tool">
+      <ul>
+        <li class="time">昨天 11:22</li>
+        <li class="bar">关注</li>
+        <li class="bar">评论</li>
+        <li class="bar">93</li>
+      </ul>
+    </view>
+    <view class="introduce">
+      adidas（阿迪达斯）创办于1949年，是德国运动用品制造商阿迪达斯AG成员公司。以其创办人阿道夫·阿迪·达斯勒（Adolf Adi       Dassler）命名，1920年在黑措根奥拉赫开始生产鞋类产...
+    </view>
+    <view class="shell">
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
     </view>
 </view>

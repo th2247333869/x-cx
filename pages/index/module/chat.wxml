@@ -8,60 +8,26 @@
               <input placeholder="search" bindfocus="searchPage"/>
               <image class='btnImg' src='../../images/icon_search.png'></image>
               </view>
-              <view class="recommond">
-                <view class="vir-line">
-                  <view class="rec-item">
+              <scroll-view class="recommond" scroll-y>
+                
+                  <view class="rec-item" wx:for="{{commditylist}}" >
                     <view class="p-information" bindtap="goPersonal">
-                      <image src="../../images/p1.jpeg"></image>
+                      <image src="{{item.image_url}}"></image>
                     </view>
                     <view class="information">
                       <span class="mesg">
-                        伤痛使你更加坚强，眼泪使你更加勇敢，我们都应感谢那些受伤的时光。人间困苦历尽，还未泯灭希望。                       最深的孤独不是长久的一个人，而是心里没有了任何期望。人生路上，必须看远，别让生活的压力挤走快                        乐，真正的痛苦，没有人能与你分担。成长就是这样，痛并快乐着。
+                        {{item.title}}
                       </span>
                     </view>
                     <view class="information-menu">
                       <image class="userinfo-user" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-                      <span class="user-name">  Alan Walker</span>
+                      <span class="user-name">  {{item.user_name}}</span>
                       <image class="userinfo-love" src="../../images/love.png" mode="cover"></image>
                     </view>
                   </view>
-
-                    <view class="rec-item">
-                      <view class="p-information">
-                        <image src="../../images/p2.jpg"></image>
-                      </view>
-                      <view class="information">
-                        <span class="mesg">
-                          人这辈子，有时春风得意，有时举步维艰，可不管怎样，我们都该保持一颗平和的心，淡然面对这一切。                        唯有如此，才能在处境突变时不会失落和痛苦，才能笑对人生的起起落落。
-                        </span>
-                      </view>
-                    </view>
-                </view>
-               
-                <view class="vir-line">
-                    <view class="rec-item">
-                      <view class="p-information">
-                        <image src="../../images/p4.jpeg"></image>
-                      </view>
-                      <view class="information">
-                        <span class="mesg">
-                          人这辈子，有时春风得意，有时举步维艰，可不管怎样，我们都该保持一颗平和的心，淡然面对这一切。                        唯有如此，才能在处境突变时不会失落和痛苦，才能笑对人生的起起落落。
-                        </span>
-                      </view>
-                    </view>
-                    <view class="rec-item">
-                      <view class="p-information">
-                        <image src="../../images/p4.jpeg"></image>
-                      </view>
-                      <view class="information">
-                        <span class="mesg">
-                          人这辈子，有时春风得意，有时举步维艰，可不管怎样，我们都该保持一颗平和的心，淡然面对这一切。                        唯有如此，才能在处境突变时不会失落和痛苦，才能笑对人生的起起落落。
-                        </span>
-                      </view>
-                    </view>
-                  </view>
-                </view>
-          </view>
+              </scroll-view>
+          <!--循环结束-->
+            </view>
         </swiper-item> 
         <swiper-item>
           <view class='swiper_con '>

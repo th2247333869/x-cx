@@ -1,1 +1,51 @@
 /* pages/index/pages/personal.wxss */
+.background{
+  width: 100%;
+  height: 558px;
+}
+.background image{
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  -webkit-box-sizing: border-box;
+  vertical-align: middle;
+  border-style: none;
+  display: flex;
+  align-items: center;
+  box-shadow: 1px 5px 5px #ebedef;
+}
+.tool{
+  width: 100%;
+  height: 40px;
+  position: relative;
+  color: gray;
+}
+.tool ul{
+  width: 100%;
+  height: 100%;
+  float: left;
+  padding: 15px;
+}
+.tool ul li{
+  float: left;
+}
+.time{
+  width: 60%;
+}
+.bar{
+  width: 10%;
+}
+.introduce{
+  width: 100%;
+  color: black;
+  padding: 15px;
+  -webkit-box-sizing: border-box;
+
+}
+.shell{
+  width: 100%;
+  color: black;
+  padding: 15px;
+  -webkit-box-sizing: border-box;
+  height: 60px;
+}
