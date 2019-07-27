@@ -1,20 +1,43 @@
 // pages/index/pages/personal.js
+var utils = require('../../../utils/util.js')
+var network = require('../../../utils/network.js')
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    id:'',
+    specificGoods:null,
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    let that = this;
+
+    that.getSpecificGoodsById(decodeURIComponent(options.id));
+    console.log("123");
 
   },
 
+  getSpecificGoodsById:function(id){
+    let that = this;
+    network.request({
+      url: utils.getUrl() + 'specificGoods/getSpecificGoodsById',
+      data: {
+        id: id
+      },
+      method: 'POST',
+      header: { 'content-type': 'application/x-www-form-urlencoded' },
+      success: function (res) {
+        that.setData({
+          specificGoods:res.data
+        })
+      }
+    })
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

@@ -90,9 +90,9 @@ Page({
     return false
   },
 
-  goPersonal:function(){
+  goPersonal: function (arg){
     wx.navigateTo({
-      url: './../pages/personal',
+      url: './../pages/personal?id=' + arg.currentTarget.dataset.gid,
     })
   },
 

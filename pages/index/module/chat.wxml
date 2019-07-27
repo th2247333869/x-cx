@@ -11,7 +11,7 @@
               <scroll-view class="recommond" scroll-y>
                 
                   <view class="rec-item" wx:for="{{commditylist}}" >
-                    <view class="p-information" bindtap="goPersonal">
+                    <view class="p-information" bindtap="goPersonal"  data-gId='{{item.code}}'>
                       <image src="{{item.image_url}}"></image>
                     </view>
                     <view class="information">
